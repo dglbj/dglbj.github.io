@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <style>
+	   * {
+	      margin:0;
+	      padding:0;
+	   }
+
+	   .p1 {
+		  padding:80px 0 0 0;
+		  height:638px;
+	      background-color:rgb(221,222,203);
+	   }
+ 
+	   .shield {
+	      width:300px;
+		  margin:0 auto 0 auto;
+	   } 
+	   .shield img{
+	      width:100px;
+		  height:100px;
+		  display:block;
+		  float:left;
+
+	   }
+	   
+       .pic1{
+	     transform:translate(-30px,-30px) rotate(-45deg);
+	   }       
+	   .pic2{
+	     transform:translate(100px,-30px) rotate(10deg);
+	   }       
+	   .pic3{
+	     transform:translate(200px,-30px) rotate(45deg);
+	   }
+       .pic4{
+	     transform:translate(-30px,30px) rotate(-25deg);
+	   }
+	   .pic5{
+	     transform:translate(100px,30px) rotate(45deg);
+	   }
+	   .pic6{
+	     transform:translate(200px,60px) rotate(20deg);
+	   }	   
+	   .pic7{
+	     transform:translate(-30px,30px) rotate(-25deg);
+	   }
+	   .pic8{
+	     transform:translate(100px,90px) rotate(-15deg);
+	   }
+	   .pic9{
+	     transform:translate(200px,90px) rotate(30deg);
+	   }
+	   .new img{
+	   	   transform:translate(0,0) rotate(0deg);
+           transition:all 2s ease-out 0.3s; 
+	   }
+
+	   .info {	        
+		   padding:0 0 0 500px;
+	   }
+
+   </style>
+
+
+   <div class="p1">
+	  
+	  <div class="shield ">
+		   <img src="1.jpg"class="pic1">
+		   <img src="2.jpg"class="pic2">
+		   <img src="3.jpg"class="pic3">
+		   <img src="4.jpg"class="pic4">
+		   <img src="5.jpg"class="pic5">
+		   <img src="6.jpg"class="pic6">
+		   <img src="7.jpg"class="pic7">
+		   <img src="8.jpg"class="pic8">
+		   <img src="9.jpg"class="pic9">
+		</div>
+		
+		
+   </div>
+
+     <script src="1.js"></script>
+
+	 <script>
+	 setTimeout(function(){
+
+		$(".shield").addClass("new");
+	   },500);
+
+     </script>
+
+	 </body>
+</html>
